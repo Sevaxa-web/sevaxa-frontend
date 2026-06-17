@@ -1,31 +1,27 @@
 import NavItem from "../ui/NavItem";
 import SevaxaLogo from "../../assets/sevaxa-logo.svg";
+import "./header.css";
 
 export default function Header() {
   return (
-    <header
-      style={{
-        background: "#FFFFFF",
-        display: "flex",
-        justifyContent: "space-around",
-        alignItems: "center",
-      }}
-    >
+    <header>
       <div>
         <img src={SevaxaLogo} alt="Sevava logotyp" />
       </div>
       <nav>
-        <ul style={{ display: "flex", gap: '8px' }}>
-          <NavItem title="Home" link="/" />
+        <ul>
+          <NavItem title="Home" to="/" />
 
-          <NavItem title="About" link="/" />
+          <NavItem title="About" to="/about" />
 
-          <NavItem title="Contact Us" link="/" />
+          <NavItem title="Contact Us" to="/contact" />
         </ul>
       </nav>
-      <div style={{ display: "flex", gap: '8px', alignItems: "center" }}>
+      <div className="last-header-section">
         <p>Log In</p>
-        <button>Book a demo</button>
+        <button className="">
+          Book a demo <span>&rarr;</span>
+        </button>
       </div>
     </header>
   );
