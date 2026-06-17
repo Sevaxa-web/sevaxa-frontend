@@ -1,12 +1,21 @@
+import { NavLink } from "react-router-dom";
+
 type NavItemProps = {
   title: string;
-  link: string;
+  to: string;
 };
 
-export default function NavItem({ title, link }: NavItemProps) {
+export default function NavItem({ title, to }: NavItemProps) {
   return (
-    <li style={{listStyleType: 'none', border: '1px solid black', padding: '8px 15px'}}>
-      <a href={link} style={{textDecoration: 'none'}}>{title}</a>
+    <li>
+      <NavLink
+        to={to}
+        className={({ isActive }) =>
+          isActive ? "nav-link-text active" : "nav-link-text"
+        }
+      >
+        {title}
+      </NavLink>
     </li>
   );
 }
