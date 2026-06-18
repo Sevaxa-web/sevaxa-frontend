@@ -6,7 +6,7 @@ header {
   font-size: var(--font-size-sm);
   height: 108px;
   font-weight: 500;
-  color: var(--color-primary);
+  color: var(--color-text-primary);
 }
 
 nav > ul {
@@ -18,25 +18,25 @@ nav > ul {
       /* border: 1px solid black; */
       border-radius: var(--radius-sm);
       text-decoration: none;
-      color: var(--color-primary);
-      padding: 8px 15px;
+      color: var(--color-text-primary);
+      padding: var(--space-2) var(--space-4);
     }
     .nav-link-text.active{
-      color: var(--color-accent);
-      background-color: '#032420';
+      color: var(--color-teal);
+      background-color: #b4d8da;
     }
   }
 }
 
 .last-header-section {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--space-2);
   align-items: center;
 }
 
 button{
   color: #FFFFFF;
-  background-color: var(--color-accent);
+  background-color: var(--color-teal);
   border: 0;
 } 
 
