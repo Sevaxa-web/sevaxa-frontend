@@ -21,7 +21,7 @@ nav > ul {
       color: var(--color-text-primary);
       padding: var(--space-2) var(--space-4);
     }
-    .nav-link-text.active{
+    .nav-link-text.active {
       color: var(--color-teal);
       background-color: #c4ecee;
     }
@@ -34,10 +34,20 @@ nav > ul {
   align-items: center;
 }
 
-button{
-  color: #FFFFFF;
+button {
+  color: #ffffff;
   background-color: var(--color-teal);
   border: 0;
   border-radius: var(--radius-sm);
   padding: var(--space-3) var(--space-3);
-}               
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  p {
+    margin: 0;
+
+    display: inline;
+  }
+
+}

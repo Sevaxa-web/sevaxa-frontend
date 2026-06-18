@@ -1,5 +1,6 @@
 import NavItem from "../ui/NavItem";
 import SevaxaLogo from "../../assets/sevaxa-logo.svg";
+import ArrowSVG from '../../assets/icons/right-arrow.svg'
 import "./header.css";
 
 export default function Header() {
@@ -20,7 +21,10 @@ export default function Header() {
       <div className="last-header-section">
         <p>Log In</p>
         <button className="">
-          Book a demo <span>&rarr;</span>
+          <p>
+            Book a demo 
+          </p>
+          <img src={ArrowSVG} alt="" />
         </button>
       </div>
     </header>
