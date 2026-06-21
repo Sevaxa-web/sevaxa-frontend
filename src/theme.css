@@ -132,9 +132,34 @@ a {
     font-weight: bold;
   }
 
-  .metric-value{
+  .metric-value {
     font-weight: 600;
     font-size: 36px;
     color: var(--color-teal);
   }
+}
+
+form {
+  max-width: 476px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+}
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="text"],
+textarea {
+  border-radius: var(--radius-6);
+  border: 1px solid var(--color-border);
+  min-height: 35px;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  padding-left: 14px;
+  padding-top: 4px;
 }
