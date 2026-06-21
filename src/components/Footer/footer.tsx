@@ -1,3 +1,4 @@
+import sevaxaIcon from "../../assets/icons/Untitled 1.svg";
 import "./footer.css";
 
 export default function Footer() {
@@ -5,8 +6,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__brand">
-          <div className="footer__logo">S</div>
-          <p>© 2024 Sevaxa. All rights reserved</p>
+          <img src={sevaxaIcon} alt="Sevaxa icon" className="footer__logo" />
+          <p>© 2026 Sevaxa. All rights reserved</p>
         </div>
 
         <div className="footer__column">
