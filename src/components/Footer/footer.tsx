@@ -1,12 +1,12 @@
 import "./footer.css";
-
+import S from '../../assets/icons/sevaxaicon.svg?react'
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__brand">
-          <div className="footer__logo">S</div>
-          <p>© 2024 Sevaxa. All rights reserved</p>
+          <div className="footer__logo">{<S />}</div>
+          <p>© 2026 Sevaxa. All rights reserved</p>
         </div>
 
         <div className="footer__column">
