@@ -1,9 +1,29 @@
 .hero {
   display: flex;
   align-items: center;
-  padding: 91px 174px 72px 175px;
+   padding: 91px 174px 72px 175px; 
+  justify-self: center;
+  
+
 }
 
-.hero__image {
-  margin-left: auto;
+h1 {
+  font-size: 48px;
 }
+
+
+.hero__content {
+  width: 426px; 
+  p {
+    color: var(--color-text-secondary)
+  }
+
+h1 > span {
+  color:var(--color-teal);
+  
+}
+
+}
+
+
+
