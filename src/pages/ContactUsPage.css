@@ -1,0 +1,32 @@
+.form-contact-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-8);
+}
+
+.contact-detail {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.contact-detail-text {
+  h5 {
+    color: var(--color-text-secondary);
+  }
+  p,
+  h5 {
+    margin: 0;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.form-contact-container {
+  .right-side > p {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    max-width: 326px;
+  }
+}
