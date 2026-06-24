@@ -24,10 +24,22 @@ export default function HomePage(){
         </div>
       </section>
     </div>
-    
-      <div>
+     
+      <section className="report-incident-section">
+  <div className="report-incident-section__content">
+    <h2>Capture the full picture of every incident</h2>
+    <p>...</p>
+  </div>
 
-      </div>
+  <div className="report-incident-section__image">
+    <img
+      src="/src/assets/report-incident.png"
+      alt="Report incident overview"
+    />
+  </div>
+</section>
+
+      
 
 
         </>
