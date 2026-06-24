@@ -1,0 +1,9 @@
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 91px 174px 72px 175px;
+}
+
+.hero__image {
+  margin-left: auto;
+}
