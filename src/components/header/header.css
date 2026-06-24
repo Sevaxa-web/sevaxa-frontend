@@ -4,7 +4,7 @@ header {
   justify-content: space-around;
   align-items: center;
   font-size: var(--font-size-sm);
-  height: 108px;
+  min-height: 108px;
   font-weight: 500;
   color: var(--color-text-primary);
   box-shadow: var(--box-shadow);
