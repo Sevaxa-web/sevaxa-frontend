@@ -9,7 +9,7 @@
   --color-text-secondary: #717680;
   --color-text-primary: #0e254d;
   --color-text-dark: #002d48;
-
+  --color-background-secondary: #E5F0F1;
   /* Brand */
   --color-primary: #2579d4;
   --color-primary-bg: #eff7ff;
@@ -69,7 +69,9 @@ body {
   color: var(--color-text-primary);
 }
 
-
+.secondary-bg-color{
+  background-color: var(--color-background-secondary);
+}
 
 button,
 input,
@@ -89,7 +91,7 @@ a {
   height: 100vh;
 }
 
-main{
+main {
   flex: 1;
 }
 
@@ -111,15 +113,16 @@ main{
   p {
     margin: 0;
   }
-  .icon-container {
-    height: 40px;
-    width: 40px;
-    background: #f1f8f9;
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+}
+
+.icon-container {
+  height: 40px;
+  width: 40px;
+  background: #f1f8f9;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   svg {
     color: var(--color-teal);
   }
@@ -174,22 +177,29 @@ textarea::placeholder {
   padding-top: 4px;
 }
 
-.page-header{
+.page-header {
   max-width: 683px;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
-  p{
+  p {
     color: var(--color-text-secondary);
     text-align: center;
     font-size: 14px;
     margin-bottom: 0;
     line-height: 1.7;
   }
-  h1{
+  h1 {
     margin: 0;
     font-size: 40px;
+
   }
+}
+
+.icon-cards-grid{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
