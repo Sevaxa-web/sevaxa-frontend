@@ -5,6 +5,7 @@ import IconCard from "../components/ui/IconCard";
 import ShieldCheck from '../assets/icons/shield-check.svg?react'
 import LayoutGrid from '../assets/icons/layout-dashboard.svg?react'
 import TrendingUp from '../assets/icons/trending-up.svg?react'
+import BringSystem from "../components/ui/BringSystem";
 
 export default function AboutPage() {
   return (
@@ -63,6 +64,7 @@ export default function AboutPage() {
           <p>Founders of Sevaxa</p>
         </div>
       </div>
+      <BringSystem/>
     </>
   );
 }
