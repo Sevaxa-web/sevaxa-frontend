@@ -11,7 +11,7 @@ export default function IconCard({ icon, title, description }: IconCardProps) {
     <div className="icon-card">
       <div className="icon-container">{icon}</div>
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p className="text-color-secondary">{description}</p>
     </div>
   );
 }
