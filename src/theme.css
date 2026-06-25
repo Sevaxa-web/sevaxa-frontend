@@ -203,3 +203,28 @@ textarea::placeholder {
   justify-content: center;
   gap: 2rem;
 }
+
+.bring-system-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  padding: 58px 0;
+  h2{
+    margin: 0;
+    font-size: 36px;
+
+  }
+  & > p{
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.text-color-secondary{
+  color: var(--color-text-secondary);
+
+}
