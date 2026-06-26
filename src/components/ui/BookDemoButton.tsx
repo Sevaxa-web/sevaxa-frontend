@@ -1,13 +1,17 @@
-import ArrowSVG from '../../assets/icons/right-arrow.svg'
+import ArrowSVG from "../../assets/icons/right-arrow.svg";
+import { useFormModal } from "../../contexts/FormModalContext";
+
+export default function BookDemoButton() {
+  const { openModal } = useFormModal();
 
 
-export default function BookDemoButton(){
-    return(
-        <button className="">
-          <p>
-            Book a demo 
-          </p>
-          <img src={ArrowSVG} alt="" />
-        </button>
-    );
+  
+ 
+
+  return (
+    <button className="" onClick={openModal}>
+      <p>Book a demo</p>
+      <img src={ArrowSVG} alt="" />
+    </button>
+  );
 }
