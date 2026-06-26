@@ -73,6 +73,14 @@ body {
   background-color: var(--color-background-secondary);
 }
 
+button:hover{
+  cursor: pointer;
+  background-color: #0BB3B9CC;
+}
+button:active{
+  background-color: #039FA5;
+}
+
 button,
 input,
 textarea {
