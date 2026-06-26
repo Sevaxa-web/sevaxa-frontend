@@ -1,5 +1,5 @@
 import "./HomePage.css";
-
+import BringSystem from "../components/ui/BringSystem";
 export default function HomePage() {
   return (
     <>
@@ -64,6 +64,7 @@ export default function HomePage() {
           />
         </div>
       </section>
+      <BringSystem/>
     </>
   );
 }
