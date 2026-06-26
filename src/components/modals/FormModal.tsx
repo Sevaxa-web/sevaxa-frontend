@@ -44,6 +44,7 @@ export default function FormModal() {
             </form>
           </>
         )}
+        <p className="text-color-secondary">We'll only use your details to arrange the demo</p>
       </div>
     </div>
   );
