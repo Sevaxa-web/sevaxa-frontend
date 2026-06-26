@@ -3,6 +3,7 @@ import SevaxaLogo from "../../assets/sevaxa-logo.svg";
 import BookDemoButton from "../ui/BookDemoButton";
 import "./header.css";
 
+
 export default function Header() {
   return (
     <header>
@@ -19,7 +20,7 @@ export default function Header() {
         </ul>
       </nav>
       <div className="last-header-section">
-        <p>Log In</p>
+        <a href="https://www.sevaxa.se/sign-in">Log In</a>
         <BookDemoButton/>
       </div>
     </header>
