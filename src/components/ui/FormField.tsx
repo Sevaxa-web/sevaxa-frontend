@@ -11,7 +11,7 @@ export default function FormField({ label, type = "text", name, placeholder, isM
     <>
       <label htmlFor={name}>{label}</label>
       {isMessage ? 
-        <textarea name="message" id="message" rows={4} placeholder={placeholder}></textarea>
+        <textarea name="message" id="message" rows={6} placeholder={placeholder}></textarea>
         :
         <input id={name} name={name} type={type} placeholder={placeholder} />
     }
