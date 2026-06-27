@@ -251,17 +251,36 @@ textarea::placeholder {
 }
 
 .modal {
-  max-width: 506px;
+  max-width: 498px;
   width: 100%;
   background-color: var(--color-white);
-  padding: var(--space-6);
+  padding: 30px 40px;
   border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+
   h2,
   p {
     text-align: center;
     margin: 0;
+  }
+  p{
+
+  }
+  h2{
+    font-size: 40px;
+  }
+  form{
+    margin: 25px 0 15px 0;
+    input{
+      margin-bottom: 15px;
+    }
+    textarea{
+      margin-bottom: 15px;
+    }
+  }
+  & > p {
+    font-size: 14px;
+    margin-bottom: 15px;
   }
 }
