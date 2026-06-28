@@ -67,7 +67,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <BringSystem/>
+      <BringSystem />
     </>
   );
 }
