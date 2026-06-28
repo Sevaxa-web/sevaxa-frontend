@@ -1,4 +1,5 @@
 import "./HomePage.css";
+import BookDemoButton from "../components/ui/BookDemoButton";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
               assess the risk as you go, and track every case through to
               closure.
             </p>
+            <BookDemoButton />
           </div>
 
           <div className="hero__image">
