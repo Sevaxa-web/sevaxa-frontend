@@ -2,6 +2,20 @@
   display: flex;
   justify-content: center;
   gap: var(--space-8);
+  margin: 40px 0;
+  h4{
+    margin-top: 0;
+  }
+  .right-side > p {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    max-width: 326px;
+    margin-top: 30px;
+  }
+}
+
+.contact-detail:last-child{
+    margin-bottom: 18px;
 }
 
 .contact-detail {
@@ -21,12 +35,6 @@
   p {
     font-size: 14px;
   }
+
 }
 
-.form-contact-container {
-  .right-side > p {
-    color: var(--color-text-secondary);
-    font-size: 14px;
-    max-width: 326px;
-  }
-}

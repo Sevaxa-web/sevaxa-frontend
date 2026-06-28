@@ -73,6 +73,14 @@ body {
   background-color: var(--color-background-secondary);
 }
 
+button:hover{
+  cursor: pointer;
+  background-color: #0BB3B9CC;
+}
+button:active{
+  background-color: #039FA5;
+}
+
 button,
 input,
 textarea {
@@ -229,8 +237,6 @@ textarea::placeholder {
 
 }
 
-<<<<<<< HEAD
-=======
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -245,18 +251,36 @@ textarea::placeholder {
 }
 
 .modal {
-  max-width: 506px;
+  max-width: 498px;
   width: 100%;
   background-color: var(--color-white);
-  padding: var(--space-6);
+  padding: 30px 40px;
   border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+
   h2,
   p {
     text-align: center;
     margin: 0;
   }
+  p{
+
+  }
+  h2{
+    font-size: 40px;
+  }
+  form{
+    margin: 25px 0 15px 0;
+    input{
+      margin-bottom: 15px;
+    }
+    textarea{
+      margin-bottom: 15px;
+    }
+  }
+  & > p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 }
->>>>>>> 928265e662b326fdc0b59fc7fb5a4b43f1d036e3
