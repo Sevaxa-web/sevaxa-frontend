@@ -28,7 +28,7 @@ h1 > span {
 .report-incident-section {
   justify-self: center;
     text-align: center;
-     
+      background-color: var(--color-background);
 }
 
 .report-incident-section__content {
@@ -45,6 +45,7 @@ h1 > span {
 
 .risk-assesment-section {
   justify-self:center;
+  background-color: var(--color-background);
   text-align: center;
   padding-top: 60px;
 }
