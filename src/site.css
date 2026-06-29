@@ -60,16 +60,15 @@ textarea {
 }
 
 form {
-  max-width: 476px;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 label {
   font-weight: bold;
   font-size: 14px;
-  margin: 0 0 7px 0;
+  margin: 0 0 5px 0;
+
 }
 
 input[type="text"],
@@ -77,8 +76,14 @@ textarea {
   border-radius: var(--radius-6);
   border: 1px solid var(--color-border);
   min-height: 35px;
-  margin-bottom: 10px;
+
+  margin-bottom: 15px;
+  &::placeholder{
+    padding-left: .5rem;
+  }
 }
+
+
 
 
 .secondary-bg-color {
@@ -215,33 +220,45 @@ textarea {
   z-index: 1000;
 }
 
-.modal {
-  max-width: 498px;
+.modal-container {
+  max-width: 506px;
+
   width: 100%;
   background-color: var(--color-white);
-  padding: 30px 40px;
   border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
-
-  h2,
-  p {
-    text-align: center;
+  justify-content: center;
+  & input{
+    margin-bottom: 1.5rem;  
   }
+
+  & textarea{
+    margin-bottom: .5rem;  
+
+  }
+
   h2 {
     font-size: 40px;
+    margin: 0;
   }
-  form {
-    margin: 25px 0 15px 0;
-    input {
-      margin-bottom: 15px;
-    }
-    textarea {
-      margin-bottom: 15px;
-    }
+  & .modal-header > p{
+    margin: .3rem 0 2rem 0;
   }
-  & > p {
+  & .modal > p {
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-top: 1rem;
   }
+
+  .modal{
+    padding: 40px 40px;
+    button{
+      width: 100%;
+      margin-top: var(--space-6);
+    }
+  }
+}
+
+.divider{
+  border-top: 1px solid var(--color-border);
 }

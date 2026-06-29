@@ -6,11 +6,14 @@ import FileText from "../assets/icons/file-text.svg?react";
 import IconShield from "../assets/icons/shield.svg?react";
 import IconLineChart from "../assets/icons/line-chart.svg?react";
 import MetricCard from "../components/ui/MetricCard";
-
+import Divider from "../components/ui/Divider";
+import { motion } from "motion/react";
+import type { animate } from "motion";
+motion
 export default function HomePage() {
   return (
     <>
-      <div className="home-page">
+      <motion.div className="home-page" initial={{opacity: 0}} animate={{opacity: 1}}>
         <section className="hero two-column-layout">
           <div className="hero__content">
             <h1>
@@ -33,7 +36,7 @@ export default function HomePage() {
             />
           </div>
         </section>
-      </div>
+      </motion.div>
 
       <section className="why-it-matters-section">
         <p className="text-center">Why it matters</p>
@@ -85,7 +88,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-
+      <Divider/>
       <section className="risk-assesment-section">
         <div className="risk-assesment-section__content">
           <h2 className="section-title">See what's major at a glance</h2>
@@ -110,6 +113,8 @@ export default function HomePage() {
           <MetricCard value="100%" label="of reports tracked ro resolution" />
         </section>
       </section>
+      <Divider/>
+      
       <BringSystem />
     </>
   );

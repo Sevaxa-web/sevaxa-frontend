@@ -6,10 +6,12 @@ import ShieldCheck from '../assets/icons/shield-check.svg?react'
 import LayoutGrid from '../assets/icons/layout-dashboard.svg?react'
 import TrendingUp from '../assets/icons/trending-up.svg?react'
 import BringSystem from "../components/ui/BringSystem";
+import CheckMarkBadge from "../components/ui/CheckMarkBadge";
+import { motion } from "motion/react";
 
 export default function AboutPage() {
   return (
-    <>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}}>
       <PageHeader
         title="About"
         description="Sevaxa was founded with a simple insight: if it's hard to report nonconformities, fewer people will do it. We created a system that removes the thresholds – so that every observation leads to improvement."
@@ -32,19 +34,9 @@ export default function AboutPage() {
             quality, traceability or security
           </p>
           <div className="check-marks">
-            <div className="check-mark-container">
-              <CheckMarkIcon  />
-              <p>No Threshold</p>
-            </div>
-            <div className="check-mark-container">
-              <CheckMarkIcon  />
-              <p>Full Traceablitly</p>
-
-            </div>
-            <div className="check-mark-container">
-              <CheckMarkIcon  />
-              <p>Security</p>
-            </div>
+            <CheckMarkBadge icon={<CheckMarkIcon  />} text="No Threshold" />
+            <CheckMarkBadge icon={<CheckMarkIcon  />} text="Full Traceablitly" />
+            <CheckMarkBadge icon={<CheckMarkIcon  />} text="Security" />
           </div>
         </div>
       </div>
@@ -65,6 +57,6 @@ export default function AboutPage() {
         </div>
       </div>
       <BringSystem/>
-    </>
+    </motion.div>
   );
 }
