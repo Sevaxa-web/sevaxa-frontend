@@ -1,5 +1,11 @@
 import "./HomePage.css";
+import BookDemoButton from "../components/ui/BookDemoButton";
+import IconCard from "../components/ui/IconCard";
 import BringSystem from "../components/ui/BringSystem";
+import FileText from "../assets/icons/file-text.svg?react";
+import IconShield from "../assets/icons/shield.svg?react";
+import IconLineChart from "../assets/icons/line-chart.svg?react";
+
 export default function HomePage() {
   return (
     <>
@@ -16,6 +22,7 @@ export default function HomePage() {
               assess the risk as you go, and track every case through to
               closure.
             </p>
+            <BookDemoButton />
           </div>
 
           <div className="hero__image">
@@ -26,6 +33,36 @@ export default function HomePage() {
           </div>
         </section>
       </div>
+
+      <section className="why-it-matters-section">
+        <p>Why it matters</p>
+
+        <h2>
+          Most harm in healthcare is preventable but only if issues are{" "}
+          <span>seen.</span>
+          <br />A culture of reporting is a culture of safety.
+        </h2>
+
+        <div className="why-it-matters__cards">
+          <IconCard
+            icon={<FileText />}
+            title="Reduce Exposure"
+            description="Catch deviations early and investigate them properly before they become incidents, claims or regulatory findings."
+          />
+
+          <IconCard
+            icon={<IconShield />}
+            title="Security & GDPR"
+            description="All data is encrypted and managed according to GDPR. Role-based access protects sensitive information."
+          />
+
+          <IconCard
+            icon={<IconLineChart />}
+            title="Insights & Analysis"
+            description="Clear statistics drawn straight from your reported data, so you can see the trends and decide where to act."
+          />
+        </div>
+      </section>
 
       <section className="report-incident-section">
         <div className="report-incident-section__content">
@@ -64,7 +101,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <BringSystem/>
+      <BringSystem />
     </>
   );
 }

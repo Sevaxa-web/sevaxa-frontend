@@ -14,4 +14,5 @@ export default function IconCard({ icon, title, description }: IconCardProps) {
       <p className="text-color-secondary">{description}</p>
     </div>
   );
-}
+} 
+
