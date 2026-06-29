@@ -27,3 +27,40 @@ h1 {
   margin: 0 auto;
   max-width: 741px;
 }
+
+.why-it-matters-section {
+  display:flex; 
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;  
+  padding: 50px 0;
+  background-color: var(--color-background-secondary);
+  &>p {
+    color:var(--color-teal);
+    font-size:var(--font-size-xs);
+    font-weight: bold;
+  }
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:100;
+     font-size:var(--font-size-xl);
+     &>span {
+      color:var(--color-teal);
+      font-style:italic;
+    }
+  }
+
+}
+
+.why-it-matters__cards {
+display: flex;
+margin:0 auto;
+gap: 20px;
+}
+
+.metric-card-section{
+  display:flex;
+  gap: var(--space-4);
+  justify-content: center;
+}

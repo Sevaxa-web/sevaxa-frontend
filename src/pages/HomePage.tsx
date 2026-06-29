@@ -5,6 +5,7 @@ import BringSystem from "../components/ui/BringSystem";
 import FileText from "../assets/icons/file-text.svg?react";
 import IconShield from "../assets/icons/shield.svg?react";
 import IconLineChart from "../assets/icons/line-chart.svg?react";
+import MetricCard from "../components/ui/MetricCard";
 
 export default function HomePage() {
   return (
@@ -35,9 +36,9 @@ export default function HomePage() {
       </div>
 
       <section className="why-it-matters-section">
-        <p>Why it matters</p>
+        <p className="text-center">Why it matters</p>
 
-        <h2>
+        <h2 className="text-center">
           Most harm in healthcare is preventable but only if issues are{" "}
           <span>seen.</span>
           <br />A culture of reporting is a culture of safety.
@@ -66,7 +67,9 @@ export default function HomePage() {
 
       <section className="report-incident-section">
         <div className="report-incident-section__content">
-          <h2 className="section-title">Capture the full picture of every incident</h2>
+          <h2 className="section-title">
+            Capture the full picture of every incident
+          </h2>
           <p className="text-center text-body text-color-secondary">
             Teams log what happened in a structured, step-by-step report —
             capturing the incident description, corrective actions taken, and
@@ -85,9 +88,7 @@ export default function HomePage() {
 
       <section className="risk-assesment-section">
         <div className="risk-assesment-section__content">
-          <h2 className="section-title">
-            See what's major at a glance
-          </h2>
+          <h2 className="section-title">See what's major at a glance</h2>
           <p className="text-center text-body text-color-secondary">
             Every report is scored on severity and likelihood, then colour-coded
             by risk level, so major incidents stand out from minor ones, and
@@ -100,6 +101,14 @@ export default function HomePage() {
             alt="Risk assessment overview"
           />
         </div>
+
+        <section className="metric-card-section">
+          <MetricCard value="150+" label="Active users" />
+
+          <MetricCard value=">2 minutes" label="Reporting incident" />
+
+          <MetricCard value="100%" label="of reports tracked ro resolution" />
+        </section>
       </section>
       <BringSystem />
     </>
