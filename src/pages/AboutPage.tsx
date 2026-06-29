@@ -6,7 +6,7 @@ import ShieldCheck from '../assets/icons/shield-check.svg?react'
 import LayoutGrid from '../assets/icons/layout-dashboard.svg?react'
 import TrendingUp from '../assets/icons/trending-up.svg?react'
 import BringSystem from "../components/ui/BringSystem";
-
+import CheckMarkBadge from "../components/ui/CheckMarkBadge";
 export default function AboutPage() {
   return (
     <>
@@ -32,19 +32,9 @@ export default function AboutPage() {
             quality, traceability or security
           </p>
           <div className="check-marks">
-            <div className="check-mark-container">
-              <CheckMarkIcon  />
-              <p>No Threshold</p>
-            </div>
-            <div className="check-mark-container">
-              <CheckMarkIcon  />
-              <p>Full Traceablitly</p>
-
-            </div>
-            <div className="check-mark-container">
-              <CheckMarkIcon  />
-              <p>Security</p>
-            </div>
+            <CheckMarkBadge icon={<CheckMarkIcon  />} text="No Threshold" />
+            <CheckMarkBadge icon={<CheckMarkIcon  />} text="Full Traceablitly" />
+            <CheckMarkBadge icon={<CheckMarkIcon  />} text="Security" />
           </div>
         </div>
       </div>
