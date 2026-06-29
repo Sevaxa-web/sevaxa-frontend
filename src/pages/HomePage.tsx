@@ -5,7 +5,7 @@ import BringSystem from "../components/ui/BringSystem";
 import FileText from "../assets/icons/file-text.svg?react";
 import IconShield from "../assets/icons/shield.svg?react";
 import IconLineChart from "../assets/icons/line-chart.svg?react";
-
+import Divider from "../components/ui/Divider";
 export default function HomePage() {
   return (
     <>
@@ -82,7 +82,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-
+      <Divider/>
       <section className="risk-assesment-section">
         <div className="risk-assesment-section__content">
           <h2 className="section-title">
@@ -101,6 +101,8 @@ export default function HomePage() {
           />
         </div>
       </section>
+      <Divider/>
+      
       <BringSystem />
     </>
   );

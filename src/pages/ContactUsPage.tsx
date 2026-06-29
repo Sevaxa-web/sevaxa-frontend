@@ -3,7 +3,8 @@ import FormField from "../components/ui/FormField";
 import MapPinIcon from "../assets/icons/map-pin.svg?react";
 import PhoneIcon from "../assets/icons/phone.svg?react";
 import MailIcon from "../assets/icons/mail.svg?react";
-import RightArrowIcon from '../assets/icons/right-arrow.svg?react'
+import RightArrowIcon from "../assets/icons/right-arrow.svg?react";
+import Divider from "../components/ui/Divider";
 
 import "./ContactUsPage.css";
 
@@ -14,32 +15,34 @@ export default function ContactUsPage() {
         title="Contact Us"
         description="Fill out the form below and we will contact you within 24 hours."
       />
+      <Divider />
       <div className="form-contact-container">
-        <form action="">
-          <FormField
-            label="Full Name"
-            name="fullName"
-            placeholder="Dr. Jane Smith"
-          />
-          <FormField
-            label="Work Email"
-            name="workEmail"
-            placeholder="jane@clinic.org"
-          />
-          <FormField
-            label="Phone (optional)"
-            name="phone"
-            placeholder="jane@clinic.org"
-          />
-          <FormField
-            label="Your message"
-            name="message"
-            placeholder="e.g. deviation reporting, risk assessment etc."
-            isMessage={true}
-          />
-          <button type="submit">Send Inquiry {<RightArrowIcon/>}</button>
-        </form>
-
+        <div className="form-container">
+          <form action="">
+            <FormField
+              label="Full Name"
+              name="fullName"
+              placeholder="Dr. Jane Smith"
+            />
+            <FormField
+              label="Work Email"
+              name="workEmail"
+              placeholder="jane@clinic.org"
+            />
+            <FormField
+              label="Phone (optional)"
+              name="phone"
+              placeholder="jane@clinic.org"
+            />
+            <FormField
+              label="Your message"
+              name="message"
+              placeholder="e.g. deviation reporting, risk assessment etc."
+              isMessage={true}
+            />
+            <button type="submit">Send Inquiry {<RightArrowIcon />}</button>
+          </form>
+        </div>
         <div className="right-side">
           <div className="contact-details">
             <h4>Contact Details</h4>
@@ -72,7 +75,10 @@ export default function ContactUsPage() {
             </div>
           </div>
           <hr />
-          <p>We normally respond within one business day. Demo meetings take place digitally via Teams or Zoom.</p>
+          <p>
+            We normally respond within one business day. Demo meetings take
+            place digitally via Teams or Zoom.
+          </p>
         </div>
       </div>
     </>
