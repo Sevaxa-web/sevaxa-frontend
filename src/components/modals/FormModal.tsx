@@ -54,7 +54,7 @@ export default function FormModal() {
                 Book a demo <img src={ArrowSVG} alt="" />
               </button>
             </form>
-            <p className="text-color-secondary">
+            <p className="text-color-secondary text-center">
               We'll only use your details to arrange the demo
             </p>
           </div>

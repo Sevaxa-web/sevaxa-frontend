@@ -229,8 +229,13 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  & input, textarea{
+  & input{
     margin-bottom: 1.5rem;  
+  }
+
+  & textarea{
+    margin-bottom: .5rem;  
+
   }
 
   h2 {
@@ -242,7 +247,7 @@ textarea {
   }
   & .modal > p {
     font-size: 14px;
-    margin-top: .5rem;
+    margin-top: 1rem;
   }
 
   .modal{
