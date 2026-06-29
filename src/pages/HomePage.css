@@ -63,6 +63,8 @@ gap: 20px;
   display:flex;
   gap: var(--space-4);
   justify-content: center;
-}.report-incident-section__image{
+
+}
+.report-incident-section__image{
   justify-self: center;
 }

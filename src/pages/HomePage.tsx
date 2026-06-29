@@ -8,8 +8,8 @@ import IconLineChart from "../assets/icons/line-chart.svg?react";
 import MetricCard from "../components/ui/MetricCard";
 import Divider from "../components/ui/Divider";
 import { motion } from "motion/react";
-import type { animate } from "motion";
-motion
+
+
 export default function HomePage() {
   return (
     <>
