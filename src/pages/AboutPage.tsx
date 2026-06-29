@@ -7,9 +7,11 @@ import LayoutGrid from '../assets/icons/layout-dashboard.svg?react'
 import TrendingUp from '../assets/icons/trending-up.svg?react'
 import BringSystem from "../components/ui/BringSystem";
 import CheckMarkBadge from "../components/ui/CheckMarkBadge";
+import { motion } from "motion/react";
+
 export default function AboutPage() {
   return (
-    <>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}}>
       <PageHeader
         title="About"
         description="Sevaxa was founded with a simple insight: if it's hard to report nonconformities, fewer people will do it. We created a system that removes the thresholds – so that every observation leads to improvement."
@@ -55,6 +57,6 @@ export default function AboutPage() {
         </div>
       </div>
       <BringSystem/>
-    </>
+    </motion.div>
   );
 }

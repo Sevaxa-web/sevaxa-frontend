@@ -6,10 +6,13 @@ import FileText from "../assets/icons/file-text.svg?react";
 import IconShield from "../assets/icons/shield.svg?react";
 import IconLineChart from "../assets/icons/line-chart.svg?react";
 import Divider from "../components/ui/Divider";
+import { motion } from "motion/react";
+import type { animate } from "motion";
+motion
 export default function HomePage() {
   return (
     <>
-      <div className="home-page">
+      <motion.div className="home-page" initial={{opacity: 0}} animate={{opacity: 1}}>
         <section className="hero two-column-layout">
           <div className="hero__content">
             <h1>
@@ -32,7 +35,7 @@ export default function HomePage() {
             />
           </div>
         </section>
-      </div>
+      </motion.div>
 
       <section className="why-it-matters-section">
         <p>Why it matters</p>

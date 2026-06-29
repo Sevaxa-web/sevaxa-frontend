@@ -5,12 +5,13 @@ import PhoneIcon from "../assets/icons/phone.svg?react";
 import MailIcon from "../assets/icons/mail.svg?react";
 import RightArrowIcon from "../assets/icons/right-arrow.svg?react";
 import Divider from "../components/ui/Divider";
+import { motion } from "motion/react";
 
 import "./ContactUsPage.css";
 
 export default function ContactUsPage() {
   return (
-    <>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}}>
       <PageHeader
         title="Contact Us"
         description="Fill out the form below and we will contact you within 24 hours."
@@ -81,6 +82,6 @@ export default function ContactUsPage() {
           </p>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
