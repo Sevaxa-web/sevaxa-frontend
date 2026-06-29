@@ -27,3 +27,6 @@ h1 {
   margin: 0 auto;
   max-width: 741px;
 }
+.report-incident-section__image{
+  justify-self: center;
+}
