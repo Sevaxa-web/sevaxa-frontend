@@ -9,11 +9,11 @@ export default function FormModal() {
 
   return (
     <div className="modal-overlay" onClick={closeModal}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
+      <div className="modal-container" onClick={(e) => e.stopPropagation()}>
         {isSent ? (
           <ThankYouModal />
         ) : (
-          <>
+          <div className="modal">
             <div className="modal-header">
               <h2>See Sevaxa in action</h2>
               <p>A 20-minute walkthrough, tailored to your organisation.</p>
@@ -57,7 +57,7 @@ export default function FormModal() {
             <p className="text-color-secondary">
               We'll only use your details to arrange the demo
             </p>
-          </>
+          </div>
         )}
       </div>
     </div>

@@ -3,7 +3,8 @@
   justify-content: center;
   gap: var(--space-8);
   margin: 40px 0;
-  h4{
+
+  h4 {
     margin-top: 0;
   }
   .right-side > p {
@@ -12,10 +13,18 @@
     max-width: 326px;
     margin-top: 30px;
   }
+  .form-container {
+    width: 25%;
+    max-width: 476px;
+  }
+  .right-side {
+    width: 25%;
+    max-width: 326px;
+  }
 }
 
-.contact-detail:last-child{
-    margin-bottom: 18px;
+.contact-detail:last-child {
+  margin-bottom: 18px;
 }
 
 .contact-detail {
@@ -35,6 +44,4 @@
   p {
     font-size: 14px;
   }
-
 }
-

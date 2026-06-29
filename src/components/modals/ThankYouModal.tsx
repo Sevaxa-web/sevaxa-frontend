@@ -6,7 +6,7 @@ export default function ThankYouModal(){
   return (
       <div className="modal">
         <h2>Thank you, we're on it</h2>
-        <p>A member of the Sevaxa team will reach out within one working day to schedule your walkthrough.</p>
+        <p className="text-body text-center">A member of the Sevaxa team will reach out within one working day to schedule your walkthrough.</p>
         <button onClick={closeModal} type="button">Close</button>
       </div>  
     );
