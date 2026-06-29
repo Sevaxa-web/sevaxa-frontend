@@ -1,17 +1,19 @@
 .our-mission-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 100px;
   padding: 52px 0;
-  .right-side > p {
+  .left-side > p {
     color: var(--color-text-primary);
     font-size: 36px;
     font-weight: 600;
     margin: 0;
     max-width: 430px;
   }
-  .left-side {
+
+  .left-side > h6 {
+    color: var(--color-teal);
+    margin: 0;
+  }
+  .right-side {
     display: flex;
     flex-direction: column;
     max-width: 481px;
@@ -23,14 +25,10 @@
   }
 }
 
-.right-side > h6 {
-  color: var(--color-teal);
-  margin: 0;
-}
-
 .check-marks {
   display: flex;
   justify-content: space-between;
+  margin-top: var(--space-6);
 }
 
 .check-mark-container {
@@ -52,32 +50,22 @@
 
 .our-values-section {
   padding: 44px 0;
-  h2 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 0;
-  }
 }
 
 .quote-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 200px;
   padding: 57px 0;
-  p{
+  p {
     margin: 0;
   }
   .right-side {
     font-family: "Georgia";
     font-size: 20px;
     max-width: 562px;
-
   }
   .left-side {
     color: var(--color-text-primary);
-    p{
-
+    p {
       font-size: 14px;
     }
   }

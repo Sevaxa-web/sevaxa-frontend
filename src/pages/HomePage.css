@@ -1,69 +1,29 @@
 .hero {
-  display: flex;
-  align-items: center;
-   padding: 91px 174px 72px 175px; 
-  justify-self: center;
-  
-
+  padding: 91px 0 72px;
 }
 
 h1 {
   font-size: 48px;
 }
 
-
 .hero__content {
-  width: 426px; 
-  p {
-    color: var(--color-text-secondary)
+  width: 426px;
+  h1 > span {
+    color: var(--color-teal);
   }
-
-h1 > span {
-  color:var(--color-teal);
-  
-}
-
-}
-
-.report-incident-section {
-  justify-self: center;
-    text-align: center;
-     
 }
 
 .report-incident-section__content {
-  justify-self: center;
+  margin: 0 auto;
   max-width: 1027px;
-  h2 {
-  font-size:36px;
-  margin:0;
-  }
-  p {
-  font-size: 16px;
-  }
-}
+ }
 
 .risk-assesment-section {
-  justify-self:center;
-  text-align: center;
+  justify-self: center;
   padding-top: 60px;
 }
 
 .risk-assesment-section__content {
+  margin: 0 auto;
   max-width: 741px;
-  text-align: center;
-  justify-self:center;
-  h2 {
-    margin:0;
-    font-size:36px;
-  }
-
-  p {
-    font-size:16px;
-  }
 }
-
-
-
-
-

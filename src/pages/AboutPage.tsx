@@ -14,12 +14,12 @@ export default function AboutPage() {
         title="About"
         description="Sevaxa was founded with a simple insight: if it's hard to report nonconformities, fewer people will do it. We created a system that removes the thresholds – so that every observation leads to improvement."
       />
-      <div className="our-mission-section secondary-bg-color">
-        <div className="right-side">
+      <div className="two-column-layout our-mission-section secondary-bg-color">
+        <div className="left-side">
           <h6>OUR MISSION</h6>
           <p>Make reporting as easy as a message</p>
         </div>
-        <div className="left-side">
+        <div className="right-side">
           <p>
             Swedish healthcare is world-class - but reporting deviations has
             historically been cumbersome and time-consuming. The result?
@@ -49,14 +49,14 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="our-values-section">
-        <h2>Our Values</h2>
+        <h2 className="section-title">Our Values</h2>
         <div className="icon-cards-grid">
             <IconCard icon={<ShieldCheck />} title="Patient safety first" description="Everything we do is based on making healthcare safer for patients and staff. Every report is a step towards better care." />
             <IconCard icon={<LayoutGrid />} title="Simplicity in design" description="We believe that the best technology is the one that feels invisible. Sevaxa is built to be so intuitive that no one needs a manual." />
             <IconCard icon={<TrendingUp />} title="Continuous improvement" description="We develop Sevaxa in close collaboration with healthcare professionals, based on real needs and feedback." />
         </div>
       </div>
-      <div className="quote-section secondary-bg-color">
+      <div className="two-column-layout quote-section secondary-bg-color">
         <div className="right-side">
           <p>“We want every healthcare worker to feel that their voice makes a difference – because it does."</p>
         </div>
