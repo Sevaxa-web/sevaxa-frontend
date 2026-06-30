@@ -8,12 +8,16 @@ import IconLineChart from "../assets/icons/line-chart.svg?react";
 import MetricCard from "../components/ui/MetricCard";
 import Divider from "../components/ui/Divider";
 import { motion } from "motion/react";
-
+import QuoteImg from "../assets/icons/quote-img.svg?react";
 
 export default function HomePage() {
   return (
     <>
-      <motion.div className="home-page" initial={{opacity: 0}} animate={{opacity: 1}}>
+      <motion.div
+        className="home-page"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <section className="hero two-column-layout">
           <div className="hero__content">
             <h1>
@@ -88,7 +92,8 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <Divider/>
+      <Divider />
+
       <section className="risk-assesment-section">
         <div className="risk-assesment-section__content">
           <h2 className="section-title">See what's major at a glance</h2>
@@ -104,17 +109,34 @@ export default function HomePage() {
             alt="Risk assessment overview"
           />
         </div>
-
-        <section className="metric-card-section">
-          <MetricCard value="150+" label="Active users" />
-
-          <MetricCard value=">2 minutes" label="Reporting incident" />
-
-          <MetricCard value="100%" label="of reports tracked ro resolution" />
-        </section>
       </section>
-      <Divider/>
-      
+
+      <Divider />
+
+      <section className="metric-card-section">
+        <MetricCard value="150+" label="Active users" />
+
+        <MetricCard value=">2 minutes" label="Reporting incident" />
+
+        <MetricCard value="100%" label="of reports tracked ro resolution" />
+      </section>
+
+      <section className="quote-section two-column-layout">
+        <p>
+          “Before Sevaxa, incidents lived in binders and inboxes. Now every case{" "}
+          <br />
+          is in one place and fully traceable, and I can show exactly what we
+          did about it.”
+        </p>
+
+        <div className="two-column-layout">
+          <QuoteImg />
+          <div>
+            <h3>Dr. Anna Lindqvist</h3>
+            <p>Medical Director - Meridian Care</p>
+          </div>
+        </div>
+      </section>
       <BringSystem />
     </>
   );

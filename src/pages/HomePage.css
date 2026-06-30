@@ -7,6 +7,9 @@ h1 {
 }
 
 .hero__content {
+  p {
+    margin-bottom: var(--space-5);
+  }
   width: 426px;
   h1 > span {
     color: var(--color-teal);
@@ -63,8 +66,31 @@ gap: 20px;
   display:flex;
   gap: var(--space-4);
   justify-content: center;
-
+  padding:50px 0;
 }
 .report-incident-section__image{
   justify-self: center;
+}
+
+.quote-section {
+ 
+  gap: 48px;
+  padding: 50px 150px;
+  background-color: var(--color-background-secondary);
+
+    h3{
+      margin:0 0 var(--space-1)0;
+    }
+
+  p{
+    font-weight: 20px;
+    font-size: 20px;
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .two-column-layout{
+    gap:var(--space-4)
+  
+  }
 }

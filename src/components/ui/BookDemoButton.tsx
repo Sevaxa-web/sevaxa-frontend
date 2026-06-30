@@ -4,13 +4,9 @@ import { useFormModal } from "../../contexts/FormModalContext";
 export default function BookDemoButton() {
   const { openModal } = useFormModal();
 
-
-  
- 
-
   return (
     <button className="" onClick={openModal}>
-      <p>Book a demo</p>
+      Book a demo
       <img src={ArrowSVG} alt="" />
     </button>
   );
